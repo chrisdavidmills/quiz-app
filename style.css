@@ -1,0 +1,157 @@
+/* || font import */
+
+@font-face {
+    font-family: 'harry_pregular';
+    src: url('fonts/harryp-webfont.eot');
+    src: url('fonts/harryp-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/harryp-webfont.woff') format('woff'),
+         url('fonts/harryp-webfont.ttf') format('truetype'),
+         url('fonts/harryp-webfont.svg#harry_pregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* || animations */
+
+@keyframes appear {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes disappear {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.appear {
+  animation: appear 1s 0.5s both;
+}
+
+.disappear {
+  animation: disappear 1s forwards;
+}
+
+/* || general positioning and stuff */
+
+article {
+  display: block;
+  }
+	  
+html, body {
+  margin: 0;
+  padding: 0;
+}
+	  
+html {
+  background: white;
+  font-family: 'helvetica neue', sans-serif;
+  font-size: 10px;
+}
+	  
+#wrapper {
+  background: url(images/background1.jpg) center;
+  width: 500px;
+  margin: 2rem auto;
+  height: 200px;
+  position: relative;
+  border-radius: 7px;
+  box-shadow: 5px 5px 10px black,
+              inset 5px 5px 20px rgba(255,255,255,0.8);
+}
+	  
+	  
+#wrapper div {
+  position:absolute;
+  background-color: rgba(255,255,255,0.5);
+  padding: 1rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+	  
+#wrapper #score {
+  height: 180px;
+  background: url(images/background2.jpg) center;
+  background-color: rgba(255,255,255,1);
+  border-radius: 7px;
+  box-shadow: 5px 5px 10px black,
+              inset 5px 5px 20px rgba(255,255,255,0.8);
+}
+
+/* || typography */
+
+h1 {
+  font-family: harry_pregular;
+  color: #ccc;
+  text-shadow: 1px 1px 5px black;
+  font-size: 7rem;
+  text-align: right;
+  padding: 1rem 1rem 0 0;
+}
+
+#score h1 {
+  text-align: left;
+  font-size: 4rem;
+  padding: 12rem 0 0 1rem;
+}
+
+/* || buttons */
+	  
+#start,#reset {
+  width: 8em;
+  height: 3em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+  border-radius: 7px 0px;
+  background-color: #ccc;
+  background: linear-gradient(#ccc,#666);
+  box-shadow: 1px 1px 1px black; 
+}
+
+#start:hover, #start:focus {
+  background-color: #ddd;
+}
+
+#start:active {
+  box-shadow: inset 1px 1px 5px black;
+}
+	  	  
+select, div button {
+  width: 15em;
+}
+
+select {
+  height: 2.2rem;
+  transform: translateY(1px);
+  text-align: center;
+  margin-right: 1rem;
+}
+
+div button {
+  height: 2.2rem;
+  border: 0;
+  background-color: #ccc;
+  background: linear-gradient(#ccc,#666);
+  box-shadow: 1px 1px 1px black; 
+  border-radius: 7px 0px;
+}
+
+@media all and (max-width: 500px) {
+  #wrapper {
+    width: 100%;
+    min-width: 320px;
+  }
+  
+  h1 {
+    font-size: 4rem;
+  }
+  
+  div div button, select {
+    display: block;
+    margin: 0.4rem auto;
+    width: 60%;
+  }
+}
