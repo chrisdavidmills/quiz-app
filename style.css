@@ -1,5 +1,18 @@
 /* || font import */
 
+#header { position: relative;}
+#header-content { position: absolute; bottom: 100; left: 0; background-color: #ccc;}
+
+span{
+
+  font-size: 55px;
+  font-family: harry_pregular;
+  color: maroon;
+}
+
+
+
+
 @font-face {
     font-family: 'harry_pregular';
     src: url('fonts/harryp-webfont.eot');
@@ -50,10 +63,10 @@ html {
 }
 	  
 #wrapper {
-  background: url(images/background1.jpg) center;
+  background: url(images/background1.jpg) top;
   width: 500px;
   margin: 2rem auto;
-  height: 200px;
+  height: 300px;
   position: relative;
   border-radius: 7px;
   box-shadow: 5px 5px 10px black,
@@ -63,11 +76,12 @@ html {
 	  
 #wrapper div {
   position:absolute;
-  background-color: rgba(255,255,255,0.5);
+  background: #0a6c8f;
   padding: 1rem;
   bottom: 0;
   left: 0;
   right: 0;
+  text-align: center;
 }
 	  
 #wrapper #score {
@@ -90,6 +104,20 @@ h1 {
   padding: 1rem 1rem 0 0;
 }
 
+h2 {
+  font-family: harry_pregular;
+  color: white;
+  letter-spacing: 2px;
+  font size:22px;
+  
+}
+
+h3 {
+  font-family: harry_pregular;
+  color: maroon;
+  
+}
+
 #score h1 {
   text-align: left;
   font-size: 4rem;
@@ -102,7 +130,7 @@ h1 {
   width: 8em;
   height: 3em;
   position: absolute;
-  top: 0;
+  top: 200;
   left: 0;
   border: 0;
   border-radius: 7px 0px;
