@@ -11,7 +11,19 @@ span{
 }
 
 
+body{
+  font-family: harry_pregular;
+  color: maroon;
+  text-align: center;
 
+}
+
+button{
+  font-family: harry_pregular;
+  color: maroon;
+  font-size: 14px;
+
+}
 
 @font-face {
     font-family: 'harry_pregular';
@@ -85,10 +97,13 @@ html {
 }
 	  
 #wrapper #score {
-  height: 180px;
-  background: url(images/background2.jpg) center;
+  height: 300px;
+  width:500px;
+  background: url(images/background2.jpg) top;
+  background-size: 100% 100%;
   background-color: rgba(255,255,255,1);
   border-radius: 7px;
+  position: relative;
   box-shadow: 5px 5px 10px black,
               inset 5px 5px 20px rgba(255,255,255,0.8);
 }
@@ -97,11 +112,12 @@ html {
 
 h1 {
   font-family: harry_pregular;
-  color: #ccc;
+  color: red;
   text-shadow: 1px 1px 5px black;
   font-size: 7rem;
-  text-align: right;
+  text-align: center;
   padding: 1rem 1rem 0 0;
+  vertical-align: text-bottom;
 }
 
 h2 {
