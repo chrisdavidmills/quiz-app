@@ -1,5 +1,30 @@
 /* || font import */
 
+#header { position: relative;}
+#header-content { position: absolute; bottom: 100; left: 0; background-color: #ccc;}
+
+span{
+
+  font-size: 55px;
+  font-family: harry_pregular;
+  color: maroon;
+}
+
+
+body{
+  font-family: harry_pregular;
+  color: maroon;
+  text-align: center;
+
+}
+
+button{
+  font-family: harry_pregular;
+  color: maroon;
+  font-size: 14px;
+
+}
+
 @font-face {
     font-family: 'harry_pregular';
     src: url('fonts/harryp-webfont.eot');
@@ -50,10 +75,10 @@ html {
 }
 	  
 #wrapper {
-  background: url(images/background1.jpg) center;
+  background: url(images/background1.jpg) top;
   width: 500px;
   margin: 2rem auto;
-  height: 200px;
+  height: 300px;
   position: relative;
   border-radius: 7px;
   box-shadow: 5px 5px 10px black,
@@ -63,18 +88,22 @@ html {
 	  
 #wrapper div {
   position:absolute;
-  background-color: rgba(255,255,255,0.5);
+  background: #0a6c8f;
   padding: 1rem;
   bottom: 0;
   left: 0;
   right: 0;
+  text-align: center;
 }
 	  
 #wrapper #score {
-  height: 180px;
-  background: url(images/background2.jpg) center;
+  height: 300px;
+  width:500px;
+  background: url(images/background2.jpg) top;
+  background-size: 100% 100%;
   background-color: rgba(255,255,255,1);
   border-radius: 7px;
+  position: relative;
   box-shadow: 5px 5px 10px black,
               inset 5px 5px 20px rgba(255,255,255,0.8);
 }
@@ -83,11 +112,26 @@ html {
 
 h1 {
   font-family: harry_pregular;
-  color: #ccc;
+  color: red;
   text-shadow: 1px 1px 5px black;
   font-size: 7rem;
-  text-align: right;
+  text-align: center;
   padding: 1rem 1rem 0 0;
+  vertical-align: text-bottom;
+}
+
+h2 {
+  font-family: harry_pregular;
+  color: white;
+  letter-spacing: 2px;
+  font size:22px;
+  
+}
+
+h3 {
+  font-family: harry_pregular;
+  color: maroon;
+  
 }
 
 #score h1 {
@@ -102,7 +146,7 @@ h1 {
   width: 8em;
   height: 3em;
   position: absolute;
-  top: 0;
+  top: 200;
   left: 0;
   border: 0;
   border-radius: 7px 0px;

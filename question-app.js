@@ -34,7 +34,7 @@ function questionApp() {
     finalScore.appendChild(finalScoreText);
     finalScore.setAttribute("id","score");
     finalScore.className = "appear";
-    finalScoreText.innerHTML = "Your final score is " + score + " out of " + questionCount;
+    finalScoreText.innerHTML = "\t"+"\tYour final score is " + score + " out of " + questionCount;
     
     var resetButton = document.createElement("button");
     finalScore.appendChild(resetButton);
