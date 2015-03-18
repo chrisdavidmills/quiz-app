@@ -32,6 +32,26 @@
   animation: disappear 1s forwards;
 }
 
+/* || webkit-prefixed versions of animation rules for Chrome(/Safari too?) */
+
+@-webkit-keyframes appear {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes disappear {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.appear {
+  -webkit-animation: appear 1s 0.5s both;
+}
+
+.disappear {
+  -webkit-animation: disappear 1s forwards;
+}
+
 /* || general positioning and stuff */
 
 article {
